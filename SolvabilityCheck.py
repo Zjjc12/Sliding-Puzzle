@@ -11,7 +11,6 @@ def inversionCheck(array):
 		for b in array:
 			if int(a) > int(b) and array.index(b) - array.index(a) > 0:
 				inversion += 1
-			#nversion += int(x) - (array.index(x) + 1)
 	return inversion
 
 
