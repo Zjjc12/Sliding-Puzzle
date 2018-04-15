@@ -3,13 +3,17 @@ import numpy as np
 
 def inversionCheck(array):
 	inversion = 0
+
+	#delete x from array
 	for i in range(len(array)):
 		if array[i] == "x":
 			del (array[i])
-			break;
+			break
+	# find inversion by looking for pair with inverted position
 	for a in array:
 		for b in array:
 			if int(a) > int(b) and array.index(b) - array.index(a) > 0:
+				#change inversion pair by 1
 				inversion += 1
 	return inversion
 
@@ -54,8 +58,6 @@ def isPuzzlePossible(matrix):
 		else:
 			return False
 
-matrix = np.matrix([[3, 9, 1, 15], [14, 11, 4, 6], [13, "x", 10, 12], [2, 7, 8, 5]])
 
-print (matrix)
-print ("Inversions:", inversionCheck (matrix.A1.tolist()))
-print("This puzzle's solvability:", isPuzzlePossible(matrix))
+
+
