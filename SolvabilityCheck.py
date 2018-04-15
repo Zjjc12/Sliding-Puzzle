@@ -7,9 +7,11 @@ def inversionCheck(array):
 		if array[i] == "x":
 			del (array[i])
 			break;
-	for x in array:
-		if (int(x) - (array.index(x) + 1)) > 0:
-			inversion += int(x) - (array.index(x) + 1)
+	for a in array:
+		for b in array:
+			if int(a) > int(b) and array.index(b) - array.index(a) > 0:
+				inversion += 1
+			#nversion += int(x) - (array.index(x) + 1)
 	return inversion
 
 
