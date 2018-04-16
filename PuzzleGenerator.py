@@ -46,10 +46,12 @@ def GeneratePuzzle(size):
 	#return matrix
 	return matrix
 			
-						
+#IDEAS:
+	#invert a number if not solvable (change inversion)
+	#random index in a list of unused numbers
 	
 	
-print (GeneratePuzzle(10))
+print (GeneratePuzzle(4))
 
 	
 

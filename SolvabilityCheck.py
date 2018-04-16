@@ -12,7 +12,7 @@ def inversionCheck(array):
 	# find inversion by looking for pair with inverted position
 	for a in array:
 		for b in array:
-			if int(a) > int(b) and array.index(b) - array.index(a) > 0:
+			if int(a) > int(b) and array.index(b) > array.index(a):
 				#change inversion pair by 1
 				inversion += 1
 	return inversion
