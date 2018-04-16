@@ -8,3 +8,6 @@ Still a work in progress
 * Moving Puzzles
 * Playable Puzzle
 
+
+@2018 by Jason Zhang
+For educational purposes only
