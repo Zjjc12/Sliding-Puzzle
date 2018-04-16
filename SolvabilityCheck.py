@@ -18,7 +18,7 @@ def inversionCheck(array):
 	return inversion
 
 
-def isPuzzlePossible(matrix):
+def isPuzzleSolvable(matrix):
 	#convert numpy matrix to flat python list
 	array = matrix.A1.tolist()
 
