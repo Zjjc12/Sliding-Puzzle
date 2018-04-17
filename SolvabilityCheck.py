@@ -25,7 +25,7 @@ def isPuzzleSolvable(matrix):
 	#if n*n is even
 	if math.sqrt(len(array)) % 2 == 0:
 		#loop through all rows to check to see where "x" is
-		for x in range (0, len(matrix)):
+		for x in range (len(matrix)):
 			#for every odd row (index starts at 0)
 			if x % 2 == 0:
 				#loop through columns of matrix in row x to see if "x" exist
@@ -41,7 +41,7 @@ def isPuzzleSolvable(matrix):
 			#for every even row
 			else:
 				#loop through columns of matrix in row x to see if "x" exist
-				for y in range(0, len(matrix)):
+				for y in range(len(matrix)):
 					if (matrix[x, y] == "x"):
 						#if x is in even row, and inversion is even, return true
 						if (inversionCheck(array)) % 2 == 0:

@@ -27,7 +27,7 @@ def GeneratePuzzle(size):
 				while a == None:
 					#random number
 
-					randomNum = random.randint(1, numInArray)
+					randomNum = random.randint(1, numInArray - 1)
 					#check to see if the random number is used
 					if randomNum not in used:
 						array[index] = randomNum
