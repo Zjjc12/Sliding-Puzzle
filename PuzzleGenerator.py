@@ -49,9 +49,6 @@ def GeneratePuzzle(size):
 #IDEAS:
 	#invert a number if not solvable (change inversion)
 	#random index in a list of unused numbers
-	
-	
-print (GeneratePuzzle(4))
 
 	
 

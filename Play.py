@@ -2,8 +2,8 @@ import PuzzleGenerator as PG
 import numpy as np
 import curses
 
-#set puzzle size
-puzzleSize = 4
+#ask user for puzzle size
+puzzleSize= int(input("Type in the puzzle size you want and press enter. \n"))
 
 #initialize puzzle
 puzzle = PG.GeneratePuzzle(puzzleSize)
@@ -31,7 +31,7 @@ finished = []
 for i in range (1, puzzleSize*puzzleSize):
 	finished.append(i)
 finished.append("x")
-print(finished)
+
 finished = np.array(finished)
 #make numpy array into array in array with size of size
 finished = finished.reshape(puzzleSize, puzzleSize)
@@ -162,8 +162,10 @@ finally:
 	curses.endwin()
 
 if win == True:
+	print(chr(27) + "[2J")
 	print("YOU WON!!!")
 else:
+	print(chr(27) + "[2J")
 	print("Dont be a quiter...")
 
 

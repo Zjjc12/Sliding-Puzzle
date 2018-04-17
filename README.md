@@ -5,8 +5,10 @@ Still a work in progress
 * ~~Inversion Check~~
 * ~~Solvability Check~~
 * ~~Puzzle Generation~~
-* Moving Puzzles
-* Playable Puzzle
+* ~~Moving Puzzles~~
+* ~~Playable Puzzle~~
+* Better Graphics
+* Faster Algorithms
 
 
 @2018 by Jason Zhang
