@@ -11,5 +11,5 @@ Still a work in progress
 * Faster Algorithms
 
 
-@2018 by Jason Zhang
+2018 by Jason Zhang
 For educational purposes only
